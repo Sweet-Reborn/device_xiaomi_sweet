@@ -12,10 +12,6 @@ debug.sf.frame_rate_multiple_threshold=120
 ro.hardware.hwcomposer=sweet
 vendor.display.override_doze_mode=1
 
-# Fingerprint
-persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|990|200|local:4630946711218184577
-
 # Fluence
 ro.vendor.audio.sdk.fluencetype=fluence
 
