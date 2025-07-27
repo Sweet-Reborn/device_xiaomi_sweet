@@ -15,6 +15,13 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Evolution X Flags
+TARGET_INCLUDE_ACCORD := false
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_USES_MINI_GAPPS := true
+
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
