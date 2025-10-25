@@ -25,4 +25,7 @@ echo "Cloning hardware repos..."
 git clone -b bka-no-dolby --depth=1 https://github.com/Evolution-X-Devices/hardware_xiaomi hardware/xiaomi
 git clone -b sony-1.4 --depth=1 https://github.com/swiitch-OFF-Lab/hardware_dolby hardware/dolby
 
+echo "Cloning Viper4Android ..."
+git clone https://github.com/AxionAOSP/android_packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
+
 echo "✅ All repos cloned successfully!"
