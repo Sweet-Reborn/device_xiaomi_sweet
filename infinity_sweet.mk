@@ -23,7 +23,7 @@ INFINITY_BUILD_TYPE := UNOFFICIAL
 
 # Maintainer Name
 INFINITY_MAINTAINER := Anirban_X"
-
+TARGET_ENABLE_BLUR := true
 
 # Whether Including Google Apps
 WITH_GAPPS := true
