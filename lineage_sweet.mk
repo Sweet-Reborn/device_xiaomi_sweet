@@ -13,19 +13,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Lunaris Os Flags
 WITH_GMS := true
-TARGET_USES_OMNI_GAPPS :=true
 
+# Whether you are compiling being an OFFICIAL Maintainer:
+INFINITY_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer Name
+INFINITY_MAINTAINER := Anirban_X"
+
+
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 TARGET_INCLUDE_ACCORD := false
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 BYPASS_CHARGE_SUPPORTED := true
 
-PRODUCT_NAME := lineage_sweet
+PRODUCT_NAME := infinity_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
