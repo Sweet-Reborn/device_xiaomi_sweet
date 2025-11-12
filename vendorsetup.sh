@@ -9,7 +9,7 @@ echo "Cloning vendor tree..."
 git clone --depth=1 https://github.com/Sweet-Reborn/vendor_xiaomi_sweet.git vendor/xiaomi/sweet
 
 echo "Cloning sm6150-common device tree..."
-git clone -b rebase --depth=1 https://github.com/Sweet-Reborn/device_xiaomi_sm6150-common device/xiaomi/sm6150-common
+git clone --depth=1 https://github.com/Sweet-Reborn/device_xiaomi_sm6150-common device/xiaomi/sm6150-common
 
 echo "Cloning sm6150-common vendor tree..."
 git clone --depth=1 https://github.com/Sweet-Reborn/vendor_xiaomi_sm6150-common.git vendor/xiaomi/sm6150-common
