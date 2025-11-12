@@ -43,9 +43,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.axion_cpu_prime=$(AXION_CPU_PRIME_CORES) \
     persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
-    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES) \
-    persist.sys.perf.scroll_opt = true \
-    persist.sys.perf.scroll_opt.heavy_app = 2
+    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
 
 TARGET_INCLUDE_ACCORD := false
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
