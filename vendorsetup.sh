@@ -15,7 +15,8 @@ echo "Cloning sm6150-common vendor tree..."
 git clone --depth=1 https://github.com/Sweet-Reborn/vendor_xiaomi_sm6150-common.git vendor/xiaomi/sm6150-common
 
 echo "Cloning kernel..."
-git clone --depth=1 https://github.com/Sweet-Reborn/kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
+#git clone --depth=1 https://github.com/Sweet-Reborn/kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
+git clone --depth=1 https://github.com/Sweet-Reborn/android_kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
 
 echo "Cloning MiuiCamera trees..."
 git clone --depth=1 https://github.com/Sweet-Reborn/device_xiaomi_miuicamera-sweet2.git device/xiaomi/miuicamera-sweet
