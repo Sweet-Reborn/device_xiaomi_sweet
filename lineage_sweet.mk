@@ -18,10 +18,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Axion Os
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
-
-# Processor name (underscores become spaces)
-AXION_PROCESSOR := Snapdragon_732G_(8nm)
-BYPASS_CHARGE_SUPPORTED := true
 # Lunaris Os Flags
 WITH_GMS := true
 WITH_GAPPS := true
@@ -29,6 +25,10 @@ TARGET_USES_CORE_GAPPS := true
 #TARGET_USES_OMNI_GAPPS :=true
 TARGET_BOOT_ANIMATION_RES := 1080
 BYPASS_CHARGE_SUPPORTED := true
+WITH_BCR := true
+
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+TARGET_OPTIMIZED_DEXOPT := true
 
 TARGET_INCLUDE_ACCORD := false
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
