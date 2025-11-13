@@ -18,13 +18,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Axion Os
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_VIPERFX := true
-# Camera information (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 64,8,5,2
-AXION_CAMERA_FRONT_INFO := 16
-
-# Maintainer name (underscores become spaces in the UI)
-AXION_MAINTAINER := dodo_Lx
 
 # Processor name (underscores become spaces)
 AXION_PROCESSOR := Snapdragon_732G_(8nm)
@@ -32,18 +25,10 @@ BYPASS_CHARGE_SUPPORTED := true
 # Lunaris Os Flags
 WITH_GMS := true
 WITH_GAPPS := true
-TARGET_NEEDS_DOZE_FIX := true
-TORCH_STR_SUPPORTED := true
-AXION_CPU_PRIME_CORES := 7
-AXION_CPU_BIG_CORES := 4,5,6
-AXION_CPU_SMALL_CORES := 0,1,2,3
+TARGET_USES_CORE_GAPPS := true
+#TARGET_USES_OMNI_GAPPS :=true
 TARGET_BOOT_ANIMATION_RES := 1080
-
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.axion_cpu_prime=$(AXION_CPU_PRIME_CORES) \
-    persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
-    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
+BYPASS_CHARGE_SUPPORTED := true
 
 TARGET_INCLUDE_ACCORD := false
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
