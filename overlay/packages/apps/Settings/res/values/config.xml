@@ -35,5 +35,8 @@
 
     <!-- Whether to use PowerProfile as the primary source for battery design capacity -->
     <bool name="config_use_power_profile_for_battery_capacity">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
     
 </resources>
