@@ -26,5 +26,14 @@
 
     <!-- Whether to show min refresh rate in display settings -->
     <bool name="config_show_min_refresh_rate_switch">true</bool>
+    
+    <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">60</integer>
+    
+    <!-- System Info -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
 
+    <!-- Whether to use PowerProfile as the primary source for battery design capacity -->
+    <bool name="config_use_power_profile_for_battery_capacity">true</bool>
+    
 </resources>
