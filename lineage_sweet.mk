@@ -45,7 +45,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
     persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
 
-TARGET_INCLUDE_ACCORD := false
+TARGET_INCLUDE_ACCORD := true
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 
@@ -60,3 +60,25 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sweet_global-user 13 TKQ1.221013.002 V14.0.9.0.TKFMIXM release-keys" \
     BuildFingerprint=Redmi/sweet_global/sweet:13/TKQ1.221013.002/V14.0.9.0.TKFMIXM:user/release-keys
+Add the following variables:
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="Dodo_Lx"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+# Set RISING_MAINTAINER for version control 
+# (Optional if builder is setting properties via init_<device>.cpp)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon® 732G" \
+    RisingMaintainer="Dodo_Lx"
+
+RISING_MAINTAINER := Dodo_Lx
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := true
+
+# Whether to ship lawnchair launcher, false by default
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false 
