@@ -58,11 +58,12 @@ WITH_GMS := true/false
 
 # CORE build flags
 WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
-TARGET_INCLUDE_GOOGLE_DIALER := false
+#TARGET_USES_PICO_GAPPS := true
+#TARGET_INCLUDE_GOOGLE_DIALER := false
 # VANILLA only build flags
 #WITH_GMS := false
 
 # VANILLA build with MICROG
 #WITH_GMS := false
 #WITH_MICROG := true
+TARGET_INCLUDE_BCR := true
