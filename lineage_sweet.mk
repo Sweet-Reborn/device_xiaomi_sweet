@@ -16,6 +16,7 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Axion Os
+TARGET_INCLUDES_LOS_PREBUILTS := true
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_VIPERFX := true
