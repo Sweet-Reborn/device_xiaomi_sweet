@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/halcyon/config/common_full_phone.mk)
 
 # Lunaris Os Flags
 WITH_GMS := true
@@ -22,7 +22,7 @@ WITH_GMS := true
 INFINITY_BUILD_TYPE := UNOFFICIAL
 
 # Maintainer Name
-INFINITY_MAINTAINER := Anirban_X"
+INFINITY_MAINTAINER := "Anirban_X"
 TARGET_ENABLE_BLUR := true
 
 # Whether Including Google Apps
