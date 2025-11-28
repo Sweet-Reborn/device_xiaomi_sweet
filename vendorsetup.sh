@@ -17,8 +17,8 @@ git clone --depth=1 https://github.com/Sweet-Reborn/vendor_xiaomi_sm6150-common.
 echo "Cloning kernel..."
 #git clone --depth=1 https://github.com/Sweet-Reborn/kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
 #git clone --depth=1 https://github.com/Sweet-Reborn/android_kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
-git clone --depth=1 https://github.com/crdroidandroid/android_kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
-
+#git clone --depth=1 https://github.com/crdroidandroid/android_kernel_xiaomi_sm6150.git kernel/xiaomi/sm6150
+git clone -b Maiar-KSU --depth=1 https://github.com/Lothlorien-playground/android_kernel_common_perf-4.14.git kernel/xiaomi/sm6150
 echo "Cloning MiuiCamera trees..."
 git clone --depth=1 https://github.com/Sweet-Reborn/device_xiaomi_miuicamera-sweet2.git device/xiaomi/miuicamera-sweet
 git clone -b miuicamera --depth=1 https://github.com/Sweet-Reborn/vendor_xiaomi_miuicamera-sweet2.git vendor/xiaomi/miuicamera-sweet
