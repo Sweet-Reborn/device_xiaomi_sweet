@@ -16,7 +16,7 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Axion Os
-TARGET_INCLUDES_LOS_PREBUILTS := true
+TARGET_INCLUDES_LOS_PREBUILTS := false
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_VIPERFX := true
@@ -31,8 +31,8 @@ AXION_MAINTAINER := dodo_Lx
 AXION_PROCESSOR := Snapdragon_732G_(8nm)
 BYPASS_CHARGE_SUPPORTED := true
 # Lunaris Os Flags
-WITH_GMS := true
-WITH_GAPPS := true
+WITH_GMS := false 
+#WITH_GAPPS := true
 TARGET_NEEDS_DOZE_FIX := true
 TORCH_STR_SUPPORTED := true
 AXION_CPU_PRIME_CORES := 7
